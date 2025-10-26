@@ -1,0 +1,106 @@
+.mask{
+
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.video{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+}
+
+.mask::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+}
+
+.hero{
+
+    height: 100%;
+    width: 100%;
+}
+
+.hero .content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: #fff;
+}
+
+.hero .content h1{
+font-size: 4rem;
+padding: 0,6rem 0 1.5rem;
+
+}
+.hero .content p{
+font-size: 4rem;
+font-weight:1000;
+text-transform: uppercase;
+color: #da700d;
+
+}
+
+
+
+.content .btn{
+    display: inline-block;
+    padding: 0.6rem 3rem;
+    font-size: 1.2rem;  
+    color: #fff;
+    border: 2px solid #130b0b;
+    text-decoration: none;
+    margin-top:1.8rem 1rem;
+    transition: 0.3s;
+    position: relative;
+    top: 40px;
+}
+
+.btn{
+    background-color: #fa9017;
+    color: #ffae01;
+}
+
+.btn:hover{
+   background-color: white;
+    color: #000000;
+}
+
+.btn-light {
+  background: transparent;
+  border: 2px solid white;
+}
+
+.btn-light:hover {
+  background: white;
+  color: black;
+}
+
+@media screen and (max-width:640px){
+    
+.hero .content h1{
+font-size: 3rem;
+
+
+}
+.hero .content p{
+font-size: 3rem;
+
+}
+.content .btn{
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+}
+
+
+}
